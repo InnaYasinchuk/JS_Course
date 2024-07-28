@@ -7,27 +7,9 @@
     <title>Document</title>
   </head>
   <body class="dark">
+    <h1 class="title-dark">Today is <span id="date"></span> </h1>
     <button class="btn-dark" id="btn">LIGHT MODE</button>
 
-    <script>
-      btn.onclick = function () {
-        let btn = document.querySelector("#btn");
-        let body = document.querySelector("body");
-
-        if (body.classList.contains("dark")) {
-          btn.innerHTML = "DARK MODE";
-          body.classList.remove("dark");
-          body.classList.add("light");
-          btn.classList.remove("btn-dark");
-          btn.classList.add("btn-light");
-        } else {
-          btn.innerHTML = "LIGHT MODE";
-          body.classList.remove("light");
-          body.classList.add("dark");
-          btn.classList.remove("btn-light");
-          btn.classList.add("btn-dark");
-        }
-      };
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

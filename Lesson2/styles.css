@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -16,13 +17,26 @@ body.light {
   background: linear-gradient(45deg, #b2aac3, #9380af, #7f5aad, #52227b);
 }
 
+h1{
+  font-size: 3rem;
+  margin-bottom: 100px;
+}
+
+h1.title-dark{
+  color: #cec0df;
+}
+
+h1.title-light {
+  color: #310456;
+}
+
 button {
-  width: 50%;
+  width: 40%;
   margin: 1rem;
-  padding: 4rem;
+  padding: 3rem;
   border-radius: 50px 0px;
   background-color: transparent;
-  font-size: 5rem;
+  font-size: 4rem;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
